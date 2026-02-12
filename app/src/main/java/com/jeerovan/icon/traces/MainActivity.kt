@@ -91,6 +91,13 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+
 class MainActivity : ComponentActivity() {
     private val viewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -116,7 +123,41 @@ object Routes {
 fun AppNavigation(viewModel: MainViewModel) {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = Routes.HOME) {
+    // 300ms is a standard "natural" duration for screen slides
+    val transitionDuration = 300
+
+    NavHost(
+        navController = navController,
+        startDestination = Routes.HOME,
+        // Slide in from Right (New Screen)
+        enterTransition = {
+            slideInHorizontally(
+                initialOffsetX = { fullWidth -> fullWidth },
+                animationSpec = tween(transitionDuration)
+            )
+        },
+        // Slide out to Left (Old Screen)
+        exitTransition = {
+            slideOutHorizontally(
+                targetOffsetX = { fullWidth -> -fullWidth },
+                animationSpec = tween(transitionDuration)
+            )
+        },
+        // Slide in from Left (When going back)
+        popEnterTransition = {
+            slideInHorizontally(
+                initialOffsetX = { fullWidth -> -fullWidth },
+                animationSpec = tween(transitionDuration)
+            )
+        },
+        // Slide out to Right (Current screen removing)
+        popExitTransition = {
+            slideOutHorizontally(
+                targetOffsetX = { fullWidth -> fullWidth },
+                animationSpec = tween(transitionDuration)
+            )
+        }
+    ) {
         composable(Routes.HOME) {
             HomeScreen(
                 navController = navController

@@ -172,7 +172,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         val emailIntent = Intent(Intent.ACTION_SEND_MULTIPLE).apply {
             type = "image/png"
             putExtra(Intent.EXTRA_EMAIL, arrayOf("jeerovan@gmail.com"))
-            putExtra(Intent.EXTRA_SUBJECT, "Icon Request (${uris.size} icons)")
+            putExtra(Intent.EXTRA_SUBJECT, "Traces - Icon Request (${uris.size} icons)")
             putExtra(Intent.EXTRA_TEXT, body)
             putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
