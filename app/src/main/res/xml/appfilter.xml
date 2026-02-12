@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item 
+        component="ComponentInfo{age.of.civilizations2.jakowski.lukasz.lite/age.of.civilizations2.jakowski.lukasz.AndroidLauncher}" 
+        drawable="_12" />
+    <item 
+        component="ComponentInfo{age.of.civilizations2.jakowski.lukasz/age.of.civilizations2.jakowski.lukasz.AndroidLauncher}" 
+        drawable="_11" />
+    <item 
+        component="ComponentInfo{air.air.A81DojoMobile/air.air.A81DojoMobile.MainActivity}" 
+        drawable="_18" />
+    <item 
+        component="ComponentInfo{archery.clash.tournament/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_88" />
+    <item 
+        component="ComponentInfo{ch.logixisland.anuto/ch.logixisland.anuto.view.game.GameActivity}" 
+        drawable="_241" />
+    <item 
+        component="ComponentInfo{com.a3.topgirl.gplay/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_326" />
+    <item 
+        component="ComponentInfo{com.adult.hidden.object.puzzle.game/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_396" />
+    <item 
+        component="ComponentInfo{com.age.animal.appspot/com.ansca.corona.CoronaActivity}" 
+        drawable="_420" />
+    <item 
+        component="ComponentInfo{com.albiononline/com.albion.AlbionActivity}" 
+        drawable="_473" />
+    <item 
+        component="ComponentInfo{com.alien.shooter.galaxy.attack/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_489" />
+    <item 
+        component="ComponentInfo{com.arizona21.game/com.arizona.launcher.MainEntrench}" 
+        drawable="_705" />
+    <item 
+        component="ComponentInfo{com.arqew.bgc/com.arqew.bgc.MainActivity}" 
+        drawable="_709" />
+    <item 
+        component="ComponentInfo{com.asmolgam.states/org.cocos2dx.cpp.AppActivity}" 
+        drawable="_720" />
+    <item 
+        component="ComponentInfo{com.asmolgam.states/org.cocos2dx.cpp.MainActivity}" 
+        drawable="_720" />
+    <item 
+        component="ComponentInfo{com.beesquare.almostahero/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_924" />
+    <item 
+        component="ComponentInfo{com.birtlapp/io.kodular.invideogame.birtlnew.Screen1}" 
+        drawable="_1023" />
+    <item 
+        component="ComponentInfo{com.blust.fivearrows/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_1101" />
+    <item 
+        component="ComponentInfo{com.capp.poplive/com.capp.poplive.MainActivity}" 
+        drawable="_1200" />
+    <item 
+        component="ComponentInfo{com.dmitrybrant.modelviewer/com.dmitrybrant.modelviewer.MainActivity}" 
+        drawable="_1321" />
+    <item 
+        component="ComponentInfo{com.fanzetech.holyquran/com.fanzetech.holyquran.QuranSplashView}" 
+        drawable="_1453" />
+    <item 
+        component="ComponentInfo{com.farlightgames.igame.gp/com.farlightgames.igame.SplashActivity}" 
+        drawable="_1454" />
+    <item 
+        component="ComponentInfo{com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_291" />
+    <item 
+        component="ComponentInfo{com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp/cn.releasedata.ReleaseDataActivity.SplashActivityKing}" 
+        drawable="_291" />
+    <item 
+        component="ComponentInfo{com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp/com.releasedata.ReleaseDataActivity.SplashActivityKing}" 
+        drawable="_291" />
+    <item 
+        component="ComponentInfo{com.garena.game.kgid/com.garena.game.kgtw.SGameActivity}" 
+        drawable="_1534" />
+    <item 
+        component="ComponentInfo{com.global.antgame/com.games37.sdk.AtlasPluginDemoActivity}" 
+        drawable="_1562" />
+    <item 
+        component="ComponentInfo{com.gpl.rpg.AndorsTrail/com.gpl.rpg.AndorsTrail.activity.StartScreenActivity}" 
+        drawable="_1586" />
+    <item 
+        component="ComponentInfo{com.habby.archero/com.habby.archero.UnityPlayerActivity}" 
+        drawable="_1600" />
+    <item 
+        component="ComponentInfo{com.habby.archero/com.google.android.archive.ReactivateActivity}" 
+        drawable="_1600" />
+    <item 
+        component="ComponentInfo{com.JindoBlu.Antistress/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_299" />
+    <item 
+        component="ComponentInfo{com.JindoBlu.Antistress/com.byfen.archiver.MainActivity}" 
+        drawable="_299" />
+    <item 
+        component="ComponentInfo{com.joettaapps.adblocker/org.joettaapps.adblocker.SplashScreen}" 
+        drawable="_1745" />
+    <item 
+        component="ComponentInfo{com.kazoo.pool2.gp/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_1764" />
+    <item 
+        component="ComponentInfo{com.lilithgame.hgame.gp/sh.lilithgame.hgame.AppActivity}" 
+        drawable="_1818" />
+    <item 
+        component="ComponentInfo{com.livingearth.pro/app.RootActivity}" 
+        drawable="_1823" />
+    <item 
+        component="ComponentInfo{com.lumiplan.montagne.alpedhuez/com.example.alped_huez.MainActivity}" 
+        drawable="_1838" />
+    <item 
+        component="ComponentInfo{com.mastobaev.poolandroid/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_1864" />
+    <item 
+        component="ComponentInfo{com.mintgames.adultcoloring/com.unity3d.player.CustomSplashActivity}" 
+        drawable="_1905" />
+    <item 
+        component="ComponentInfo{com.os.airforce/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_2048" />
+    <item 
+        component="ComponentInfo{com.proximabeta.mf.liteuamo/com.epicgames.ue4.GameActivity}" 
+        drawable="_2100" />
+    <item 
+        component="ComponentInfo{com.sports.eightball.pool.rival/com.orcas.core.OrcasCoreActivity}" 
+        drawable="_2304" />
+    <item 
+        component="ComponentInfo{com.spring.bird.game2048plus/com.spring.bird.game2048plus.MainActivity}" 
+        drawable="_2305" />
+    <item 
+        component="ComponentInfo{com.syf.amazonstorecard/com.synchronyfinancial.plugin.SynchronyPlugInActivity}" 
+        drawable="_2327" />
+    <item 
+        component="ComponentInfo{com.techyonic.textbasedrpg/com.techyonic.textbasedrpg.MainActivity}" 
+        drawable="_2352" />
+    <item 
+        component="ComponentInfo{com.tw.mf.uamo/com.epicgames.ue4.GameActivity}" 
+        drawable="_2421" />
+    <item 
+        component="ComponentInfo{com.tw.mf.uamo/com.google.android.archive.ReactivateActivity}" 
+        drawable="_2421" />
+    <item 
+        component="ComponentInfo{com.usm.andorsecret/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_2457" />
+    <item 
+        component="ComponentInfo{com.Wispwood.ArrowQuest/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_314" />
+    <item 
+        component="ComponentInfo{com.YoStar.AetherGazer/com.mimir.sdk.UAMain}" 
+        drawable="_315" />
+    <item 
+        component="ComponentInfo{droidhang.twgame.restaurant/org.cocos2dx.javascript.AppActivity}" 
+        drawable="_2689" />
+    <item 
+        component="ComponentInfo{eightball.pool.live.eightballpool.billiards/com.live8ball.GameActivity}" 
+        drawable="_2698" />
+    <item 
+        component="ComponentInfo{io.lntinfotech.AIStaxpayer/io.lntinfotech.AIStaxpayer.MainActivity}" 
+        drawable="_2846" />
+    <item 
+        component="ComponentInfo{jp.uuum.blueman1/jp.uuum.blueman1.AppActivity}" 
+        drawable="_2940" />
+    <item 
+        component="ComponentInfo{jp.uuum.blueman3/jp.uuum.blueman3.AppActivity}" 
+        drawable="_2941" />
+    <item 
+        component="ComponentInfo{jp.uuum.blueman4/com.google.firebase.MessagingUnityPlayerActivity}" 
+        drawable="_2942" />
+    <item 
+        component="ComponentInfo{kemco.execreate.alphadia2/game.kemco.eula2.ConsentActivity}" 
+        drawable="_2948" />
+    <item 
+        component="ComponentInfo{kemco.execreate.alphadia/game.kemco.eula2.ConsentActivity}" 
+        drawable="_2947" />
+    <item 
+        component="ComponentInfo{kemco.hitpoint.armdgolempremium/game.kemco.eula2.ConsentActivity}" 
+        drawable="_2949" />
+    <item 
+        component="ComponentInfo{kemco.wws.einereise/game.kemco.eula2.ConsentActivity}" 
+        drawable="_2950" />
+    <item 
+        component="ComponentInfo{maths.formulas/maths.formulas.MainActivity}" 
+        drawable="_2986" />
+    <item 
+        component="ComponentInfo{moe.low.arc/low.moe.AppActivity}" 
+        drawable="_3024" />
+    <item 
+        component="ComponentInfo{org.cris.kmmts/org.cris.kmmts.activity.SplashScreen}" 
+        drawable="_3191" />
+    <item 
+        component="ComponentInfo{ru.wohlsoft.adlmidiplayer/ru.wohlsoft.adlmidiplayer.Player}" 
+        drawable="_3379" />
+    <item 
+        component="ComponentInfo{ai.perplexity.app.android/ai.perplexity.app.android.ui.main.MainActivity}" 
+        drawable="_3673" />
+    <item 
+        component="ComponentInfo{ai.perplexity.app.android/ai.perplexity.app.android.authorization.exception.MainActivity}" 
+        drawable="_3673" />
+    <item 
+        component="ComponentInfo{ai.perplexity.app.android/com.google.android.archive.ReactivateActivity}" 
+        drawable="_3673" />
+    <item 
+        component="ComponentInfo{app.lawnchair.lawnicons.play/app.lawnchair.lawnicons.MainActivity}" 
+        drawable="_3971" />
+    <item 
+        component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" 
+        drawable="_6027" />
+    <item 
+        component="ComponentInfo{com.android.chrome/com.android.chrome.Main}" 
+        drawable="_6027" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.FaceUnlockSettingActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.fpmanager.FpSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.system.SystemUpdateActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.GridSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.HWSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MainSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.oppo.settings.SettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.kc_settings.LauncherActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.kc_settings.common.LauncherActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.jrdTethering.JrdTetherSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.mokee.helper.activities.MoKeeForum}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SugarKeyStart}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.wfd.WifiDisplaySettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.meizu.settings.ContainerActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.internal.app.ResolverActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com_android_settings_applicationsettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.ApplicationSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.bluetooth.BluetoothSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.DisplaySettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.dual.DualManagerAppActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.fingerprint.FingerprintSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.biometrics.fingerprint.FingerprintSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.fingerprint.YLFingerprintMainActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.FireFlyMobile}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.framework.activity.HtcSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.GnSettingsTabActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.HotspotSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.KeypadActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.KstFaceLockActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.LavaOtaActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.LewaSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MacSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MainActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MainEntry}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MainSettingActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MainSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MiniromTebEktipiti}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MiuiPasswordGuardActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MiuiSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MlehoySettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.mokee.helper.activities.TipsHelp}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.MySettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.OntimSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.OppoSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.OriginSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.power.PowerManagementActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.powersave.MainActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$AudioProfileSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.simplesettings.SimpleSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$EdgeSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$FingerprintOperationActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$GLFingerPrintManagerActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$HotspotActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$HtcAboutPhoneHelpActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SecuritySettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SprdManageApplicationsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SprdManageTasksActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SprdTetherSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$SuperSnapSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$TetherSettingsActivity2}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$TetherSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$TetherSettingsActivityMPCS}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$TetherWifiSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$WifiApSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$WifiDisplaySettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$WifiP2pSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$WifiSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings$ZteTmoTetheringActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsEMUI}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsMain}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsMatricStyle}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.Settings_Root}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsTabActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsTab}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SettingsTabStyle}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SimCardManagement}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.sudamod.LocationLookup}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.SystemActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TabbedSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TabSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettingsLenovo}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettingsShortCutLauncherSupport}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettingsShortCutMPCS}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.TetherSettingsWifi}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.UsageManager}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.usagemanager.UsageManagerActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.wfd.WifiDisplayEnableActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.wifi.hotspot.TetherWifiSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.magcomm.powersave.SurperPowerLauncher}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.miui.securitycenter.Main}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/.framework.activity.HtcSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/.HWSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/.MainSettings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/.Settings}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.transsion.faq.activity.MainActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.settings/com.android.settings.FakeFingerSettingsActivity}" 
+        drawable="_6075" />
+    <item 
+        component="ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.android.vending/org.lighthouseex.MainActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.android.vending/com.squareup.leakcanary.internal.DisplayLeakActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.android.vending/com.google.android.finsky.activities.PlayLauncherActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.android.vending/com.google.android.finsky.tvmainactivity.TvMainActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.android.vending/org.microg.vending.ui.MainActivity}" 
+        drawable="_6087" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.tabbed.home.HomeActivity}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.activities.Splash}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.GOLD}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.DEFAULT}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.default}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.Splash}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.application.zomato/com.application.zomato.gold}" 
+        drawable="_6320" />
+    <item 
+        component="ComponentInfo{com.bankofbaroda.mconnect/com.bankofbaroda.mconnect.activities.SplashActivity}" 
+        drawable="_875" />
+    <item 
+        component="ComponentInfo{com.bankofbaroda.mconnect/com.bankofbaroda.mconnect.BobSplashActivity}" 
+        drawable="_875" />
+    <item 
+        component="ComponentInfo{com.brave.browser/com.google.android.apps.chrome.Main}" 
+        drawable="_1158" />
+    <item 
+        component="ComponentInfo{com.crrepa.band.dafit/com.crrepa.band.my.view.activity.SplashActivity}" 
+        drawable="_8191" />
+    <item 
+        component="ComponentInfo{com.crrepa.band.dafit/com.crrepa.band.my.SplashActivity}" 
+        drawable="_8191" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/com.digilocker.android.ui.activity.dashboard.activity.MainDashboardActivity}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/com.digilocker.android.ui.activity.SplashScreenActivitycom.digilocker.android}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/com.digilocker.android.ui.activity.SplashScreenActivity}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/com.digilocker.android.ui.activity.ActivitySplashScreen}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/in.gov.digilocker.views.mainactivity.SplashScreenActivity}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.digilocker.android/com.digilocker.android.ui.activity.ActivitySplash2}" 
+        drawable="_8699" />
+    <item 
+        component="ComponentInfo{com.donnnno.arcticons/com.donnnno.arcticons.activities.MainActivity}" 
+        drawable="_1345" />
+    <item 
+        component="ComponentInfo{com.donnnno.arcticons/com.donnnno.arcticons.activities.SplashActivity}" 
+        drawable="_1345" />
+    <item 
+        component="ComponentInfo{com.drivetrackplusrefuel/com.drivetrackplusrefuel.splash.GlanceActivity}" 
+        drawable="_9067" />
+    <item 
+        component="ComponentInfo{com.github.android/com.github.android.activities.MainActivity}" 
+        drawable="_10738" />
+    <item 
+        component="ComponentInfo{com.github.android/com.github.android.main.MainActivity}" 
+        drawable="_10738" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11021" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.apps.authenticator.AuthenticatorActivity}" 
+        drawable="_11021" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.apps.authenticator2.main.MainActivity}" 
+        drawable="_11021" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.chromecast.app/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11027" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.chromecast.app/com.google.android.apps.chromecast.app.DiscoveryActivity}" 
+        drawable="_11027" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}" 
+        drawable="_11032" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11032" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.HomeScreenActivity}" 
+        drawable="_11032" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.MainProxyActivity}" 
+        drawable="_11032" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.app.NewMainProxyActivity}" 
+        drawable="_11033" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11033" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.app.DocumentOpenerActivityProxy}" 
+        drawable="_11033" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixDocumentCreatorActivity}" 
+        drawable="_11033" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.editors.kix.KixEditorActivity}" 
+        drawable="_11033" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11034" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.NewMainProxyActivity}" 
+        drawable="_11034" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.DocumentOpenerActivityProxy}" 
+        drawable="_11034" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.editors.kix.KixDocumentCreatorActivity}" 
+        drawable="_11034" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.editors.kix.KixEditorActivity}" 
+        drawable="_11034" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.android.internal.app.ResolverActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.driveabout.app.DestinationActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.driveabout.app.NavigationActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.driveabout.app.SearchActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.driveabout.app.SettingsActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.LatitudeActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.PlacesActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.TrafficHubActivity}" 
+        drawable="_11053" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.user/com.google.nbu.paisa.flutter.gpay.app.MainActivity}" 
+        drawable="_11059" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.user/com.google.nbu.paisa.flutter.gpay.app.LauncherActivity}" 
+        drawable="_11059" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.nbu.paisa.user/com.google.android.apps.nbu.paisa.user.launcher.LauncherActivity}" 
+        drawable="_11059" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.playconsole/com.google.android.apps.playconsole.activity.MainAndroidActivity}" 
+        drawable="_11069" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.playconsole/com.google.android.apps.play.console.mobile.MainActivity}" 
+        drawable="_11069" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivitySecondLauncher}" 
+        drawable="_11075" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.MainActivity}" 
+        drawable="_11075" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.tachyon/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11075" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.tasks/com.google.android.apps.tasks.ui.TaskListsActivity}" 
+        drawable="_11076" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.tasks/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11076" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}" 
+        drawable="_11092" />
+    <item 
+        component="ComponentInfo{com.google.android.apps.youtube.music/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11092" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.AutoSendActivity}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.ComposeActivityGmail}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGoogleMail}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.GmailActivity}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.MailboxSelectionActivity}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.MailboxSelectionActivitygoogle_mail}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.MailboxSelectionActivityGoogleMail}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.Preference.GmailPreferenceActivity}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.gm/com.google.android.gm.ui.MailActivityGmailSafeMode}" 
+        drawable="_11108" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.settingsui.VoiceSearchPreferences}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.surfaces.settings.deeplink.AliasAssistantSettingsGatewayActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.settingsui.SettingsActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.voicesearch.greco3.languagepack.InstallActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.surfaces.voice.robin.launcher.RobinEntryPointActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AliasAddShortcutActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.shortcut.AddShortcutActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.search.weather.entrypoints.appicon.WeatherAppIconActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.search.clientui.SearchServiceClientActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.EnterOpaActivityFromLauncher}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.apps.gsa.velour.DynamicActivityTrampoline}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.GoogleSearch}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.MainInfoGatewayInternal}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchPreferences}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.handsfree.HandsFreeLauncherActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.MainActivity}" 
+        drawable="_11112" />
+    <item 
+        component="ComponentInfo{com.google.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}" 
+        drawable="_11116" />
+    <item 
+        component="ComponentInfo{com.google.android.inputmethod.latin/com.google.android.apps.inputmethod.libs.framework.core.LauncherActivity}" 
+        drawable="_11116" />
+    <item 
+        component="ComponentInfo{com.google.android.inputmethod.latin/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11116" />
+    <item 
+        component="ComponentInfo{com.google.android.inputmethod.latin/com.google.android.libraries.inputmethod.launcher.LauncherActivity}" 
+        drawable="_11116" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.BrowseActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.AnimatingListDetailsEditActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.Br}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.IntentResolverActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.IntentResolverWithMimeTypeActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.ListDetailsActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.activities.NoteToSelfActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.keep/com.google.android.keep.homescreenwidget.WidgetIntentResolverActivity}" 
+        drawable="_11118" />
+    <item 
+        component="ComponentInfo{com.google.android.play.games/com.google.android.gms.games.ui.destination.main.MainActivity}" 
+        drawable="_11122" />
+    <item 
+        component="ComponentInfo{com.google.android.play.games/com.google.android.apps.play.games.features.gamefolder.appdrawer.GameFolderAppDrawerActivity}" 
+        drawable="_11122" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.archive.ReactivateActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/.app.honeycomb.Shell$HomeActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.froyo.phone.HomeActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.tablet.HomeActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomeActivity}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/com.google.android.youtube.HomePage}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.android.youtube/net.ogmods.youtube.OGDownloadManager1}" 
+        drawable="_11136" />
+    <item 
+        component="ComponentInfo{com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity}" 
+        drawable="_11139" />
+    <item 
+        component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity}" 
+        drawable="_1582" />
+    <item 
+        component="ComponentInfo{com.google.zxing.client.android/com.google.zxing.client.android.SplashScreenActivity}" 
+        drawable="_1582" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.VALENTINE}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.NEW_YEAR_V2}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.CHRISTMAS}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.ui.screens.splash.SplashActivity}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.HFS}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.DEFAULT}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.NAVRATRI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.DIWALI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.NEW_YEAR}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.REPUBLIC_DAY}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.VALENTINES}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.HOLI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.RAKHI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.INDEPENDENCE_DAY}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.DEEPAWALI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.NAVARATRI}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.grofers.customerapp/com.grofers.customerapp.activities.ActivitySplashScreen}" 
+        drawable="_1591" />
+    <item 
+        component="ComponentInfo{com.indusindbank.IndusDirect/com.indusindbank.IndusDirect.IndusdirectS1}" 
+        drawable="_46680" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity1}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity2}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity13}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/.activity.MainTabActivity}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.iconone}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.mainactivity.LauncherActivity}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity14}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.OM7753.gold.icon1}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.InternalLauncher}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity3}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.instagram.android/com.instagram.android.iconfive}" 
+        drawable="_12178" />
+    <item 
+        component="ComponentInfo{com.jeerovan.comfer/com.jeerovan.comfer.MainActivity}" 
+        drawable="_46679" />
+    <item 
+        component="ComponentInfo{com.jio.home/com.jio.home.cleanarchitecture.common.screen.JioHomeLaunchActivity}" 
+        drawable="_12546" />
+    <item 
+        component="ComponentInfo{com.jio.home/com.jio.home.ui.activity.SplashActivity}" 
+        drawable="_12546" />
+    <item 
+        component="ComponentInfo{com.jio.home/com.jio.home.cleanarchitecture.common.screen.SplashActivity}" 
+        drawable="_12546" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.DashboardActivity}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivity}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivityAlias2}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.activities.StartAllAppView}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.activities.StartFolderView}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.jio.myjio/com.jio.myjio.dashboard.activities.SplashActivityAlias}" 
+        drawable="_12557" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.VideoRecorderActivity_1}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.TakePhotoActivity_1}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.LoginActivity_5}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.LoginActivity_1}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.LoginActivity_2}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.kimcy929.secretvideorecorder/com.kimcy929.secretvideorecorder.LoginActivity_3}" 
+        drawable="_12992" />
+    <item 
+        component="ComponentInfo{com.marutisuzuki.rewards/com.marutisuzuki.rewards.activity.SplashActivity}" 
+        drawable="_13985" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleMar25}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleSept25}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.main.MainActivity}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.default}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.sale01Sept24}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.meesho.supply/com.meesho.supply.saleOct24}" 
+        drawable="_14196" />
+    <item 
+        component="ComponentInfo{com.microsoft.office.excel/com.microsoft.office.apphost.LaunchActivity}" 
+        drawable="_14392" />
+    <item 
+        component="ComponentInfo{com.microsoft.office.excel/com.microsoft.office.excel.excelMainActivity}" 
+        drawable="_14392" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.ui.launch.UIWebViewActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.piyush.music.activities.main.MainActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.battlenet.showguide.SplashActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.UIWebViewTabletActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.mediaclient/com.google.android.archive.ReactivateActivity}" 
+        drawable="_15352" />
+    <item 
+        component="ComponentInfo{com.netflix.Speedtest/com.netflix.Speedtest.MainActivity}" 
+        drawable="_15351" />
+    <item 
+        component="ComponentInfo{com.net.pvr/com.net.pvr.ui.splash.SplashActivity}" 
+        drawable="_15310" />
+    <item 
+        component="ComponentInfo{com.net.pvr/com.net.pvr.ui.splash.PCSplash}" 
+        drawable="_15310" />
+    <item 
+        component="ComponentInfo{com.nothing.icon.free/com.nothing.icon.free.MainActivity}" 
+        drawable="_15667" />
+    <item 
+        component="ComponentInfo{com.openai.chatgpt/com.google.android.archive.ReactivateActivity}" 
+        drawable="_15972" />
+    <item 
+        component="ComponentInfo{com.openai.chatgpt/com.openai.chatgpt.MainActivity}" 
+        drawable="_15972" />
+    <item 
+        component="ComponentInfo{com.openai.chatgpt/md.elway.evo.screen.chat.ChatActivity}" 
+        drawable="_15972" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.yousician.yousiciannative.GuitarTunaActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.unity3d.player.UnityPlayerNativeActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.unity3d.player.UnityPlayerActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.unity.purchasing.googleplay.VRPurchaseActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.ovelin.guitartuna.GuitarTunaActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.ovelin.guitartuna.activity.GuideActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.ovelin.guitartuna/com.yousician.GuitarTunaActivity}" 
+        drawable="_16185" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.vitruvian}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.stocks}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/com.google.android.archive.ReactivateActivity}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.neon}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.vaporwave}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.retro}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.brrr}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.redditgifts}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.amazedoge}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/com.reddit.frontpage.StartActivity}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.default}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.wallstreet}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.classic}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.alien_blue}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.doge}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.astronaut}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.tothemoon}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.planet}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.pullover}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.chibi}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.mechasnoo}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.reddit.frontpage/launcher.pixels}" 
+        drawable="_17507" />
+    <item 
+        component="ComponentInfo{com.samsung.android.app.contacts/com.samsung.android.contacts.contactslist.PeopleActivity}" 
+        drawable="_17935" />
+    <item 
+        component="ComponentInfo{com.samsung.android.app.reminder/com.samsung.android.app.reminder.ui.LaunchMainActivity}" 
+        drawable="_17947" />
+    <item 
+        component="ComponentInfo{com.samsung.android.app.simplesharing/com.samsung.android.app.simplesharing.linksharing.history.Launcher}" 
+        drawable="_17950" />
+    <item 
+        component="ComponentInfo{com.samsung.android.app.simplesharing/com.samsung.android.app.simplesharing.history.Launcher}" 
+        drawable="_17950" />
+    <item 
+        component="ComponentInfo{com.samsung.android.calendar/com.android.calendar.AllInOneActivity}" 
+        drawable="_17960" />
+    <item 
+        component="ComponentInfo{com.samsung.android.calendar/com.samsung.android.app.calendar.activity.MainActivity}" 
+        drawable="_17960" />
+    <item 
+        component="ComponentInfo{com.samsung.android.dialer/com.samsung.android.dialer.DialtactsActivity}" 
+        drawable="_17962" />
+    <item 
+        component="ComponentInfo{com.samsung.android.dialer/.DialtactsActivity}" 
+        drawable="_17962" />
+    <item 
+        component="ComponentInfo{com.samsung.android.messaging/com.android.mms.ui.ConversationComposer}" 
+        drawable="_17981" />
+    <item 
+        component="ComponentInfo{com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationListActivity}" 
+        drawable="_17981" />
+    <item 
+        component="ComponentInfo{com.samsung.android.messaging/com.samsung.android.messaging.ui.ConversationList}" 
+        drawable="_17981" />
+    <item 
+        component="ComponentInfo{com.samsung.android.spaymini/com.samsung.android.spay.ui.SpayMainActivity}" 
+        drawable="_17999" />
+    <item 
+        component="ComponentInfo{com.samsung.memorysaver/com.samsung.memorysaver.zipunzipapps.ui.activities.ZipLauncherActivity}" 
+        drawable="_18021" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.camera/com.sec.android.app.camera.Camera}" 
+        drawable="_18187" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.camera/.Camera}" 
+        drawable="_18187" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.ClockPackage}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.common.activity.ClockPackage}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.TabletClockPackageWC}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.TabletClockPackage}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.alarm.Alarm}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.AlarmActivity}" 
+        drawable="_18190" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}" 
+        drawable="_18192" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.external.ui.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.ui.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/.common.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.external.ui.LaunchActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.Myfiles}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/.external.ui.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.ui.ForMyFilesAppIconInHomeScreenActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.common.MainActivity}" 
+        drawable="_18196" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.popupcalculator/com.sec.android.app.popupcalculator.Calculator}" 
+        drawable="_18197" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.popupcalculator/.Calculator}" 
+        drawable="_18197" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.samsungapps/com.sec.android.app.samsungapps.SamsungAppsMainActivity}" 
+        drawable="_18198" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.samsungapps/com.sec.android.app.samsungapps.Main}" 
+        drawable="_18198" />
+    <item 
+        component="ComponentInfo{com.sec.android.app.samsungapps/com.sec.android.app.samsungapps.SKSamsungMainActivity}" 
+        drawable="_18198" />
+    <item 
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivity}" 
+        drawable="_18211" />
+    <item 
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.Gallery}" 
+        drawable="_18211" />
+    <item 
+        component="ComponentInfo{com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity}" 
+        drawable="_18211" />
+    <item 
+        component="ComponentInfo{com.sec.android.gallery3d/.app.GalleryOpaqueActivity}" 
+        drawable="_18211" />
+    <item 
+        component="ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryActivity}" 
+        drawable="_18211" />
+    <item 
+        component="ComponentInfo{com.server.auditor.ssh.client/com.server.auditor.ssh.client.navigation.SplashScreenActivity}" 
+        drawable="_18291" />
+    <item 
+        component="ComponentInfo{com.server.auditor.ssh.client/com.google.android.archive.ReactivateActivity}" 
+        drawable="_18291" />
+    <item 
+        component="ComponentInfo{com.server.auditor.ssh.client/com.server.auditor.ssh.client.navigation.SshNavigationDrawerActivity}" 
+        drawable="_18291" />
+    <item 
+        component="ComponentInfo{com.server.auditor.ssh.client/com.server.auditor.ssh.client.navigation.MainActivity}" 
+        drawable="_18291" />
+    <item 
+        component="ComponentInfo{com.snapwork.hdfc/com.hdfc.retail.netbanking.HDFCBank}" 
+        drawable="_18750" />
+    <item 
+        component="ComponentInfo{com.snapwork.hdfc/com.snapwork.hdfc.launcher_d88b5c5194763f71a0b9000b2167d32df77bd19df2fb186232ee9b3ce115458a}" 
+        drawable="_18750" />
+    <item 
+        component="ComponentInfo{com.snapwork.hdfc/com.snapwork.hdfc.HDFCBank}" 
+        drawable="_18750" />
+    <item 
+        component="ComponentInfo{com.snapwork.hdfc/com.snapwork.hdfc.SplashActivity}" 
+        drawable="_18750" />
+    <item 
+        component="ComponentInfo{com.tplink.iot/com.tplink.iot.view.welcome.StartupActivity}" 
+        drawable="_20164" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon11}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/app.revanced.extension.twitter.appicon26}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.google.android.archive.ReactivateActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon13}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon12}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon25}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon7}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon10}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon14}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon2}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon3}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon4}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon6}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon8}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.example.nm.TwitterLauncherMainActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.android.LoginActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.android.MainActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.android.stub.MainActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.applib.StartActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.icon5}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.twitter.subscriptions.appicon.implementation.seasonal_icon20}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.yrwl.admanager.bytedance.SplashActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.twitter.android/com.x.android.main.MainActivity}" 
+        drawable="_20463" />
+    <item 
+        component="ComponentInfo{com.ubnt.usurvey/com.ubnt.usurvey.ui.app.splash.SplashActivity}" 
+        drawable="_20506" />
+    <item 
+        component="ComponentInfo{com.ubnt.usurvey/com.ubnt.usurvey.ui.splash.SplashActivity}" 
+        drawable="_20506" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.0}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.19}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.65}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.62}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.39}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Icon0}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.10}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.11}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.12}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.13}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.14}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.15}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.16}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.17}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.18}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.1}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.21}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.22}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.23}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.24}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.25}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.26}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.27}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.28}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.29}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.2}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.30}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.31}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.32}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.33}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.34}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.36}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.37}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.38}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.3}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.42}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.43}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.44}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.45}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.46}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.47}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.48}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.49}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.4}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.50}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.51}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.52}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.53}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.54}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.55}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.57}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.58}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.59}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.5}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.60}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.61}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.63}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.64}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.66}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.67}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.68}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.69}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.6}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.70}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.71}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.72}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.73}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.74}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.75}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.76}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.77}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.7}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.8}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.9}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.HomeActivity}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.iconfive}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.iconfour}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.iconone}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.iconthree}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.icontwo}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-01}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-02}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-03}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-04}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-05}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-06}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-07}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-08}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-09}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main0}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-10}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main10}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-11}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main11}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-12}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main12}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-13}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main13}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-14}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main14}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-15}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main15}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-16}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main16}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-17}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main17}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-18}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main1}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main21}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main24}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main26}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main2}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main30}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main31}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main37}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main38}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main3}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main4}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main5}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main6}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main7}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main8}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main9}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-Plus}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Main-Reborn}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.mod.Mulbhut-05}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.Icon43}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp/com.whatsapp.40}" 
+        drawable="_21422" />
+    <item 
+        component="ComponentInfo{com.whatsapp.w4b/com.whatsapp.Main}" 
+        drawable="_21424" />
+    <item 
+        component="ComponentInfo{com.xiaomi.smarthome/com.xiaomi.smarthome.SmartHomeMainActivity}" 
+        drawable="_21684" />
+    <item 
+        component="ComponentInfo{com.xiaomi.smarthome/com.google.android.archive.ReactivateActivity}" 
+        drawable="_21684" />
+    <item 
+        component="ComponentInfo{com.xiaomi.smarthome/com.xiaomi.smarthome.StartupActivity}" 
+        drawable="_21684" />
+    <item 
+        component="ComponentInfo{com.xiaomi.smarthome/com.xiaomi.smarthome.VevsIcon}" 
+        drawable="_21684" />
+    <item 
+        component="ComponentInfo{com.zoho.mail/com.zoho.mail.android.activities.Login}" 
+        drawable="_22048" />
+    <item 
+        component="ComponentInfo{fr.ecp.ruler.app/com.xalphalab.rulerlib.MainActivity}" 
+        drawable="_23504" />
+    <item 
+        component="ComponentInfo{fr.ecp.ruler.app/com.google.android.archive.ReactivateActivity}" 
+        drawable="_23504" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAlias}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.mShop.amazonpay.AmazonPayHomeActivityAliasWoShortcuts}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.mShop.amazonbazaar.AmazonBazaarHomeActivityAlias}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.google.android.archive.ReactivateActivity}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.amazon.mShop.android.shopping/com.amazon.twa.CustomTWALauncherActivity}" 
+        drawable="_2797" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/com.hotstar.hotstarActivityAlias.tiranga_2025}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/com.google.android.archive.ReactivateActivity}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/com.hotstar.MainActivityJv}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/in.startv.hotstar.rocky.launch.splash.SplashActivity}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/in.startv.hotstar.activities.splash.SplashActivity}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{in.startv.hotstar/com.hotstar.MainActivity}" 
+        drawable="_24081" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.LauncherActivity}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.lollipop.ManagerActivityLollipop}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.lollipop.ManagerActivity}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.main.ManagerActivity}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/com.google.android.archive.ReactivateActivity}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/mega.privacy.android.app.presentation.login.LoginActivity}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{mega.privacy.android.app/com.duapps.ad.DuAd}" 
+        drawable="_25485" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.AJRJarvisSplash}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.alias_icon_stage2}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.PaytmActivity}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.SplashActivity}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.app.LauncherActivity}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.landingpage.activity.AJRMainActivity}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{net.one97.paytm/net.one97.paytm.alias_icon_stage3}" 
+        drawable="_25919" />
+    <item 
+        component="ComponentInfo{notion.id/notion.local.id.MainActivity}" 
+        drawable="_26308" />
+    <item 
+        component="ComponentInfo{notion.id/notion.id.MainActivity}" 
+        drawable="_26308" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.ExteraIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuTyan}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramSpotify}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivityRocketIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.min.n.MainActivity}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.NeoIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AmethystIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.GoogleIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.OrbitIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramNothing}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.SapphireIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.MonetIconExtera}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.SusIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.MonetIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.AyuGramDiscord}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.exteragram.messenger.DefaultIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/com.google.android.archive.ReactivateActivity}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.ui.LaunchActivity}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DefaultIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.AquaIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.VintageIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MerioIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.RainbowIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.OldSchoolIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MusheenIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.SpaceIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.CloudIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.NeonIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DarkIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.MaterialIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.TurboIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.NoxIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.PremiumIcon}" 
+        drawable="_3257" />
+    <item 
+        component="ComponentInfo{org.torproject.torbrowser/org.torproject.torbrowser.App}" 
+        drawable="_27168" />
+    <item 
+        component="ComponentInfo{screen.recorder.ul/com.recorder.core.MainActivity}" 
+        drawable="_28292" />
+    <item 
+        component="ComponentInfo{site.scanopy.app/site.scanopy.app.ActivityStart}" 
+        drawable="_46681" />
+</resources>
