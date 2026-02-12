@@ -1,5 +1,7 @@
 package com.jeerovan.icon.traces
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -41,17 +43,25 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -61,6 +71,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -100,6 +112,11 @@ fun AppNavigation(viewModel: MainViewModel) {
             IconsScreen(
                 navController = navController,
                 viewModel = viewModel
+            )
+        }
+        composable(Routes.HOWTO) {
+            HowToScreen(
+                navController = navController
             )
         }
     }
@@ -290,7 +307,6 @@ fun IconsScreen(
             }
         )
     }
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -346,6 +362,189 @@ fun IconsScreen(
                 }
             }
         }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun HowToScreen(
+    navController: NavController
+) {
+    val context = LocalContext.current
+    val scrollState = rememberScrollState()
+
+    // Intent to open Comfer Launcher in Play Store
+    val comferPackageName = "com.jeerovan.comfer"
+    val openPlayStore = remember {
+        {
+            try {
+                val intent =
+                    Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$comferPackageName"))
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            } catch (e: android.content.ActivityNotFoundException) {
+                // Fallback for devices without Play Store
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$comferPackageName"))
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(intent)
+            }
+        }
+    }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("How to use") },
+                navigationIcon = {
+                    IconButton(onClick = { navController.popBackStack() }) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = "Back"
+                        )
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface
+                )
+            )
+        },
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+                .verticalScroll(scrollState) // Prevent layout issues on small screens
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            // --- Section 1: Recommended Launcher (Highlighted) ---
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.4f)
+                ),
+                shape = RoundedCornerShape(16.dp)
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = "Best Viewed With",
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.padding(bottom = 16.dp)
+                    )
+
+                    Box(
+                        modifier = Modifier
+                            .clip(CircleShape) // Adaptive shape
+                            .background(Color.White) // User-selected Background
+                            .size(80.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_comfer_launcher),
+                            contentDescription = "Comfer Launcher Icon",
+                            tint = Color.Red,
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(4.dp) // Adjust padding to match adaptive icon safe-zone
+
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    // APP NAME
+                    Text(
+                        text = "Comfer Launcher",
+                        style = MaterialTheme.typography.headlineMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Text(
+                        text = "Experience the icon pack as intended with a clean, distraction-free home screen.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    // VIEW BUTTON
+                    Button(
+                        onClick = openPlayStore,
+                        modifier = Modifier.fillMaxWidth(0.7f)
+                    ) {
+                        Text("View on Play Store")
+                    }
+                }
+            }
+
+            // --- Section 2: General Instructions ---
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.Start
+            ) {
+                Text(
+                    text = "Other Launchers",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.padding(bottom = 8.dp)
+                )
+
+                Text(
+                    text = "This icon pack is built on standard Android protocols and works with most third-party launchers that support custom icon packs.",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant
+                    )
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        InstructionStep(1, "Open your launcher settings.")
+                        InstructionStep(2, "Find the 'Look & Feel' or 'Icon Style' section.")
+                        InstructionStep(3, "Select 'Icon Pack' and choose this app from the list.")
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun InstructionStep(number: Int, text: String) {
+    androidx.compose.foundation.layout.Row(
+        modifier = Modifier.padding(vertical = 4.dp),
+        verticalAlignment = Alignment.Top
+    ) {
+        Text(
+            text = "$number.",
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(end = 12.dp)
+        )
+        Text(
+            text = text,
+            style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.onSurface
+        )
     }
 }
 
