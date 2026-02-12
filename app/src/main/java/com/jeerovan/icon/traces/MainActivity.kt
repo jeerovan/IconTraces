@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
@@ -47,6 +48,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -69,18 +71,22 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.TextButton
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.core.graphics.drawable.toBitmap
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -133,8 +139,9 @@ fun AppNavigation(viewModel: MainViewModel) {
             )
         }
         composable(Routes.REQUEST) {
-            HowToScreen(
-                navController = navController
+            RequestScreen(
+                navController = navController,
+                viewModel = viewModel
             )
         }
     }
@@ -612,7 +619,6 @@ fun OpenSourceScreen(
             context.startActivity(intent)
         }
     }
-
     Scaffold(
         topBar = {
             TopAppBar(
@@ -805,6 +811,114 @@ fun ContributionStep(
         }
     }
 }
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun RequestScreen(
+    navController: NavController,
+    viewModel: MainViewModel
+) {
+    val context = LocalContext.current
+    // scrollState removed; LazyColumn handles its own scrolling
+
+    val apps by viewModel.missingApps.collectAsState()
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Request Icons") },
+                navigationIcon = {
+                    IconButton(onClick = { navController.popBackStack() }) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = "Back"
+                        )
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface
+                )
+            )
+        },
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+            // Removed global padding(16.dp) to allow list to touch edges,
+            // applied padding to children instead for better UI
+        ) {
+            // Toolbar with Send Button (Fixed at top)
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp), // Padding for the header only
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically // Align text and button vertically
+            ) {
+                Text(
+                    text = "Select Missing Icons",
+                    style = MaterialTheme.typography.headlineSmall // Slightly smaller for better fit
+                )
+
+                val selectedCount = apps.count { it.isSelected }
+                // Use AnimatedVisibility for a smoother UI when button appears/disappears
+                androidx.compose.animation.AnimatedVisibility(visible = selectedCount > 0) {
+                    Button(onClick = {
+                        viewModel.sendRequest(
+                            context,
+                            apps.filter { it.isSelected })
+                    }) {
+                        Text("Send ($selectedCount)")
+                    }
+                }
+            }
+
+            // App List (Scrollable Area)
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .weight(1f), // CRITICAL: Takes up all remaining space
+                contentPadding = PaddingValues(bottom = 16.dp) // Add padding at bottom of list
+            ) {
+                items(apps, key = { it.packageName }) { app -> // Add key for performance
+                    RequestItem(
+                        app = app,
+                        onToggle = { isChecked ->
+                            viewModel.toggleSelection(app.packageName, isChecked)
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+
+
+@Composable
+fun RequestItem(app: RequestApp, onToggle: (Boolean) -> Unit) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onToggle(!app.isSelected) }
+            .padding(16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Checkbox(checked = app.isSelected, onCheckedChange = onToggle)
+        Spacer(modifier = Modifier.width(16.dp))
+        Image(
+            bitmap = app.icon.toBitmap().asImageBitmap(), // Or use Coil for performance
+            contentDescription = null,
+            modifier = Modifier.size(48.dp)
+        )
+        Spacer(modifier = Modifier.width(16.dp))
+        Column {
+            Text(app.label, style = MaterialTheme.typography.labelLarge)
+            Text(app.packageName, style = MaterialTheme.typography.bodySmall)
+        }
+    }
+}
+
 
 @Composable
 fun ColorPickerDialog(
