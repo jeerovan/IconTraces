@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the background color -->
+        <item name="windowSplashScreenBackground">#000000</item>
 
+        <!-- Set the icon to be displayed in the middle -->
+        <!-- Use your app icon or a specific vector drawable here -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+
+        <item name="windowSplashScreenIconBackgroundColor">#FFFFFF</item>
+
+        <!-- REQUIRED: The theme to switch to after the splash screen is done -->
+        <item name="postSplashScreenTheme">@style/Theme.Traces</item>
+    </style>
     <style name="Theme.Traces" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
