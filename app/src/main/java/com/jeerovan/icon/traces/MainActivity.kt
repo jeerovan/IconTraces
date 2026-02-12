@@ -45,6 +45,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -52,14 +53,20 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Create
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -71,6 +78,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.navigation.NavController
@@ -115,6 +123,16 @@ fun AppNavigation(viewModel: MainViewModel) {
             )
         }
         composable(Routes.HOWTO) {
+            HowToScreen(
+                navController = navController
+            )
+        }
+        composable(Routes.OPENSOURCE) {
+            OpenSourceScreen(
+                navController = navController
+            )
+        }
+        composable(Routes.REQUEST) {
             HowToScreen(
                 navController = navController
             )
@@ -364,6 +382,37 @@ fun IconsScreen(
         }
     }
 }
+@Composable
+fun IconGridItem(
+    icon: IconItem,
+    foregroundColor: Color,
+    backgroundColor: Color
+) {
+    val context = LocalContext.current
+
+    Column(
+        modifier = Modifier.padding(4.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        // 4. Adaptive Icon Container
+        Box(
+            modifier = Modifier
+                .clip(CircleShape) // Adaptive shape
+                .background(backgroundColor) // User-selected Background
+                .size(64.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                painter = painterResource(id = icon.foregroundResId),
+                contentDescription = icon.name,
+                tint = foregroundColor, // 3. Apply User Foreground Tint
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(4.dp) // Adjust padding to match adaptive icon safe-zone
+            )
+        }
+    }
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -526,7 +575,6 @@ fun HowToScreen(
         }
     }
 }
-
 @Composable
 fun InstructionStep(number: Int, text: String) {
     androidx.compose.foundation.layout.Row(
@@ -548,33 +596,211 @@ fun InstructionStep(number: Int, text: String) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun IconGridItem(
-    icon: IconItem,
-    foregroundColor: Color,
-    backgroundColor: Color
+fun OpenSourceScreen(
+    navController: NavController
 ) {
     val context = LocalContext.current
+    val scrollState = rememberScrollState()
 
-    Column(
-        modifier = Modifier.padding(4.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        // 4. Adaptive Icon Container
-        Box(
+    // Intent to open GitHub
+    val repoUrl = "https://github.com/jeerovan/IconTraces"
+    val openGitHub = remember {
+        {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(repoUrl))
+            context.startActivity(intent)
+        }
+    }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Contribute") },
+                navigationIcon = {
+                    IconButton(onClick = { navController.popBackStack() }) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = "Back"
+                        )
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface
+                )
+            )
+        },
+    ) { innerPadding ->
+        Column(
             modifier = Modifier
-                .clip(CircleShape) // Adaptive shape
-                .background(backgroundColor) // User-selected Background
-                .size(64.dp),
-            contentAlignment = Alignment.Center
+                .fillMaxSize()
+                .padding(innerPadding)
+                .verticalScroll(scrollState)
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Icon(
-                painter = painterResource(id = icon.foregroundResId),
-                contentDescription = icon.name,
-                tint = foregroundColor, // 3. Apply User Foreground Tint
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(4.dp) // Adjust padding to match adaptive icon safe-zone
+
+            // --- Section 1: Repository Hero Card ---
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.4f)
+                ),
+                shape = RoundedCornerShape(16.dp)
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .clip(CircleShape) // Adaptive shape
+                            .background(Color.White) // User-selected Background
+                            .size(80.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            painter = painterResource(R.mipmap.ic_launcher_foreground),
+                            contentDescription = "Source Code",
+                            tint = Color.Black,
+                            modifier = Modifier
+                                .fillMaxSize()
+
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = "IconTraces",
+                        style = MaterialTheme.typography.headlineMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Text(
+                        text = "This project is fully open source. Access the raw SVGs, report issues, or contribute new icons.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        textAlign = TextAlign.Center,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    Button(
+                        onClick = openGitHub,
+                        modifier = Modifier.fillMaxWidth(0.8f),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.primary
+                        )
+                    ) {
+                        Icon(
+                            imageVector = Icons.Filled.PlayArrow,
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp)
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("View on GitHub")
+                    }
+                }
+            }
+
+            // --- Section 2: How to Contribute ---
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.Start
+            ) {
+                Text(
+                    text = "How to Improve Icons",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.padding(bottom = 12.dp)
+                )
+
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+                    ),
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(16.dp)
+                    ) {
+                        ContributionStep(
+                            icon = Icons.Filled.Share,
+                            title = "Clone Repository",
+                            description = "Download the source code to access the raw SVG files."
+                        )
+                        ContributionStep(
+                            icon = Icons.Filled.Create,
+                            title = "Modify SVGs",
+                            description = "Edit existing icons or add new ones using any vector editor."
+                        )
+                        ContributionStep(
+                            icon = Icons.Filled.Check,
+                            title = "Submit PR",
+                            description = "Push your changes and create a Pull Request on GitHub."
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun ContributionStep(
+    icon: ImageVector,
+    title: String,
+    description: String
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.Top
+    ) {
+        // Icon Circle
+        Card(
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surface
+            ),
+            shape = RoundedCornerShape(50),
+            modifier = Modifier.size(40.dp)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = Modifier.size(20.dp),
+                    tint = MaterialTheme.colorScheme.primary
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.width(16.dp))
+
+        // Text Content
+        Column {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+            Text(
+                text = description,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
     }
