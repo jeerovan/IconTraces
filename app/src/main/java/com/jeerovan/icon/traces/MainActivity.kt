@@ -160,7 +160,8 @@ fun AppNavigation(viewModel: MainViewModel) {
     ) {
         composable(Routes.HOME) {
             HomeScreen(
-                navController = navController
+                navController = navController,
+                viewModel = viewModel
             )
         }
         composable(Routes.ICONS) {
@@ -190,8 +191,11 @@ fun AppNavigation(viewModel: MainViewModel) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
-    navController: NavController
+    navController: NavController,
+    viewModel: MainViewModel
 ) {
+    val context = LocalContext.current
+    val versionInfo by viewModel.versionInfo.collectAsStateWithLifecycle()
     Scaffold(
         topBar = {
             TopAppBar(
@@ -309,7 +313,7 @@ fun HomeScreen(
                     headlineContent = { Text("Feedback") },
                     modifier = Modifier
                         .clickable {
-                            // open feedback play store page
+                            viewModel.shareFeedback(context)
                         }
                 )
             }
@@ -324,7 +328,7 @@ fun HomeScreen(
                     headlineContent = { Text("Share") },
                     modifier = Modifier
                         .clickable {
-                            // Share app details
+                            viewModel.shareApp(context)
                         }
                 )
             }
@@ -336,11 +340,8 @@ fun HomeScreen(
                             contentDescription = "Info Icon"
                         )
                     },
-                    headlineContent = { Text("Info") },
-                    modifier = Modifier
-                        .clickable {
-                            // Info details
-                        }
+                    headlineContent = { Text("Version") },
+                    supportingContent = { Text(versionInfo)}
                 )
             }
         }
@@ -859,8 +860,6 @@ fun RequestScreen(
     viewModel: MainViewModel
 ) {
     val context = LocalContext.current
-    // scrollState removed; LazyColumn handles its own scrolling
-
     val apps by viewModel.missingApps.collectAsState()
 
     Scaffold(

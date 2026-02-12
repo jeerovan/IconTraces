@@ -3,12 +3,15 @@ package com.jeerovan.icon.traces
 import android.app.Application
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.graphics.Canvas
+import androidx.compose.ui.res.stringResource
 import androidx.core.content.FileProvider
+import androidx.core.net.toUri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
@@ -44,6 +47,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val _missingApps = MutableStateFlow<List<RequestApp>>(emptyList())
     val missingApps = _missingApps.asStateFlow()
 
+    private val _versionInfo = MutableStateFlow<String>("")
+    val versionInfo = _versionInfo.asStateFlow()
+
     init {
         viewModelScope.launch {
             // 1. Load ALL icons in background
@@ -51,6 +57,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             // 2. Publish only the first 100 to UI immediately so it renders FAST
             _visibleIcons.value = allIcons.take(100)
             loadSupportedPackages()
+            getAppVersion(getApplication())
+        }
+    }
+    fun getAppVersion(context: Context) {
+        return try {
+            val packageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+            _versionInfo.value = packageInfo.versionName.toString()
+        } catch (_: PackageManager.NameNotFoundException) {
+            _versionInfo.value = ""
         }
     }
     // Call this when user scrolls to end
@@ -120,6 +135,39 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun selectAll(select: Boolean) {
         val currentList = _missingApps.value
         _missingApps.value = currentList.map { it.copy(isSelected = select) }
+    }
+    fun shareApp(context: Context){
+        viewModelScope.launch(Dispatchers.Main) {
+            val packageName = context.packageName
+            val playStoreUrl = "https://play.google.com/store/apps/details?id=$packageName"
+            val shareText = "Try this new Icon Pack: Traces -"
+            // Create a share intent
+            val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(
+                    Intent.EXTRA_TEXT,
+                    "$shareText $playStoreUrl"
+                )
+            }
+            // Use a chooser to show the Android share sheet
+            context.startActivity(Intent.createChooser(shareIntent, "Share with"))
+        }
+    }
+    fun shareFeedback(context: Context){
+        viewModelScope.launch(Dispatchers.Main) {
+            val packageName = context.packageName
+            try {
+                // Try to open the Play Store app directly
+                val playStoreIntent = Intent(Intent.ACTION_VIEW,
+                    "market://details?id=$packageName".toUri())
+                context.startActivity(playStoreIntent)
+            } catch (_: Exception) {
+                // If Play Store is not installed, open in a web browser
+                val webIntent = Intent(Intent.ACTION_VIEW,
+                    "https://play.google.com/store/apps/details?id=$packageName".toUri())
+                context.startActivity(webIntent)
+            }
+        }
     }
     fun sendRequest(context: Context, selectedApps: List<RequestApp>) {
         viewModelScope.launch(Dispatchers.IO) {
