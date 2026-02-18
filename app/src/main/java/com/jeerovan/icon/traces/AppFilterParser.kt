@@ -24,7 +24,7 @@ fun parseSupportedPackages(context: Context, xmlResId: Int): Set<String> {
 
                     if (!component.isNullOrEmpty()) {
                         extractPackageFromComponent(component)?.let { pkg ->
-                            supportedPackages.add(pkg)
+                            if(! supportedPackages.contains(pkg)) supportedPackages.add(pkg)
                         }
                     }
                 }
