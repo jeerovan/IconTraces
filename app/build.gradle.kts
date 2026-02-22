@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.dsl.NdkOptions
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -20,11 +22,15 @@ android {
 
     buildTypes {
         release {
+            // Enables code-related app optimization.
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            ndk {
+                debugSymbolLevel = NdkOptions.DebugSymbolLevel.SYMBOL_TABLE.toString()
+            }
         }
     }
     compileOptions {
