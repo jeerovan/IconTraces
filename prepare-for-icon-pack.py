@@ -13,6 +13,8 @@ APPFILTER = os.path.join(PROJECT_PATH, "app/src/main/res/xml/appfilter.xml")
 def prepare_graphic(package, sequence):
     source = f"{SVGS}/{package}.svg"
     destination = f"{DRAWABLES}/fg_{sequence}.webp"
+    if os.path.exists(destination):
+        return
     cmd = [
         "convert",
         "-background",
@@ -32,6 +34,8 @@ def prepare_graphic(package, sequence):
 def generate_adaptive(sequence):
     header = '<?xml version="1.0" encoding="UTF-8"?>\n'
     output_file = f"{DRAWABLES_V26}/_{sequence}.xml"
+    if os.path.exists(output_file):
+        return
     item_str = (
         f'<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"> \n'
         f'    <background android:drawable="@drawable/bg_adaptive" /> \n'
