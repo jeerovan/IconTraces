@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Traces"
 include(":app")
- 
+include(":traces_1_9k")
+include(":traces_core")
+include(":traces_9_18k")
+include(":traces_18_27k")
+include(":module")

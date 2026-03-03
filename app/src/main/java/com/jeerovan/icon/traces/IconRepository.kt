@@ -4,53 +4,64 @@ import android.content.Context
 import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import org.xmlpull.v1.XmlPullParser
 
-// IconRepository.kt
 object IconRepository {
-    // Cache the list so we don't reflect every time
-    private var cachedIcons: List<IconItem>? = null
+    // Cache the raw string names (very lightweight on RAM)
+    private var cachedDrawableNames: List<String>? = null
 
-    suspend fun getIcons(context: Context): List<IconItem> = withContext(Dispatchers.IO) {
-        if (cachedIcons != null) return@withContext cachedIcons!!
+    // 1. Private function to parse XML and get unique names ONCE
+    private suspend fun loadDrawableNames(context: Context): List<String> = withContext(Dispatchers.IO) {
+        if (cachedDrawableNames != null) return@withContext cachedDrawableNames!!
 
-        val rClass = R.drawable::class.java
-        val fields = rClass.fields
+        val names = mutableSetOf<String>()
+        try {
+            // Get string names from appfilter.xml (FAST)
+            val parser = context.resources.getXml(context.resources.getIdentifier("appfilter", "xml", context.packageName))
+            var eventType = parser.eventType
 
-        // 1. Create a fast lookup map for all drawable IDs
-        // Capacity hint avoids resizing overhead
-        val resourceMap = HashMap<String, Int>(fields.size)
-        for (field in fields) {
-            try {
-                // We only care about fields that look like resources we own
-                if (field.name.startsWith("_") || field.name.startsWith("fg_")) {
-                    resourceMap[field.name] = field.getInt(null)
+            while (eventType != XmlPullParser.END_DOCUMENT) {
+                if (eventType == XmlPullParser.START_TAG && parser.name == "item") {
+                    val drawableName = parser.getAttributeValue(null, "drawable")
+                    if (drawableName != null && drawableName.startsWith("_")) {
+                        names.add(drawableName)
+                    }
                 }
-            } catch (e: Exception) {
-                // Ignore reflection errors
+                eventType = parser.next()
             }
+        } catch (e: Exception) {
+            Log.e("IconLoader", "Error parsing appfilter.xml", e)
         }
 
-        val icons = ArrayList<IconItem>()
+        val nameList = names.toList()
+        cachedDrawableNames = nameList
+        nameList
+    }
 
-        // 2. Iterate map to find adaptive icons ("_") and pair with foregrounds ("fg_")
-        for ((name, id) in resourceMap) {
-            if (name.startsWith("_")) {
-                // Logic: if adaptive is "_youtube", foreground is "fg_youtube"
-                // string concat: "fg" + "_youtube" = "fg_youtube"
-                val expectedForegroundName = "fg$name"
+    // 2. Public function to get a specific page of resolved IconItems (SLOW part, but paginated)
+    suspend fun getIconsPage(context: Context, offset: Int, limit: Int): List<IconItem> = withContext(Dispatchers.IO) {
+        val names = loadDrawableNames(context)
 
-                val foregroundId = resourceMap[expectedForegroundName]
+        // Return empty if we've reached the end
+        if (offset >= names.size) return@withContext emptyList()
 
-                if (foregroundId != null) {
-                    icons.add(IconItem(name, id, foregroundId))
-                } else {
-                    // Optional: Handle missing foregrounds (e.g., skip or use generic)
-                    Log.w("IconLoader", "Missing foreground for $name")
-                }
+        // Get the specific chunk of names
+        val chunk = names.drop(offset).take(limit)
+
+        val packageName = context.packageName
+        val resources = context.resources
+        val icons = ArrayList<IconItem>(chunk.size)
+
+        // Resolve IDs only for this specific chunk
+        for (drawableName in chunk) {
+            val adaptiveId = resources.getIdentifier(drawableName, "drawable", packageName)
+            val expectedForegroundName = "fg$drawableName"
+            val foregroundId = resources.getIdentifier(expectedForegroundName, "drawable", packageName)
+
+            if (adaptiveId != 0 && foregroundId != 0) {
+                icons.add(IconItem(drawableName, adaptiveId, foregroundId))
             }
         }
-
-        cachedIcons = icons
         icons
     }
 }

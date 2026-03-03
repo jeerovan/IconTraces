@@ -1,18 +1,20 @@
+import shutil
+from pathlib import Path
 import subprocess
 import os
-import os
 
-# --- CONFIGURATION ---
-PROJECT_PATH = "/home/pi/AndroidStudioProjects/IconTraces"
-DRAWABLES = os.path.join(PROJECT_PATH, "app/src/main/res/drawable-nodpi")
-DRAWABLES_V26 = os.path.join(PROJECT_PATH, "app/src/main/res/drawable-anydpi-v26")
+# --- Configuration ---
+PROJECT_PATH = Path("/home/pi/AndroidStudioProjects/IconTraces")
 SVGS = os.path.join(PROJECT_PATH, "svgs")
-APPFILTER = os.path.join(PROJECT_PATH, "app/src/main/res/xml/appfilter.xml")
+SOURCE_PART = "app"
+RESPATH = "src/main/res"
+
+DRAWABLE = "drawable-anydpi-v26"
+WEBP = "drawable-nodpi"
 
 
-def prepare_graphic(package, sequence):
+def prepare_graphic(package, destination):
     source = f"{SVGS}/{package}.svg"
-    destination = f"{DRAWABLES}/fg_{sequence}.webp"
     if os.path.exists(destination):
         return
     cmd = [
@@ -31,10 +33,9 @@ def prepare_graphic(package, sequence):
     )
 
 
-def generate_adaptive(sequence):
+def generate_adaptive(sequence, destination):
     header = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    output_file = f"{DRAWABLES_V26}/_{sequence}.xml"
-    if os.path.exists(output_file):
+    if os.path.exists(destination):
         return
     item_str = (
         f'<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"> \n'
@@ -47,13 +48,58 @@ def generate_adaptive(sequence):
         f"</adaptive-icon>"
     )
     try:
-        with open(output_file, "w", encoding="utf-8") as f:
+        with open(destination, "w", encoding="utf-8") as f:
             f.write(header)
             f.write(item_str)
 
-        print(f"✅ Successfully generated '{output_file}'")
+        print(f"✅ Successfully generated '{destination}'")
     except IOError as e:
         print(f"❌ Error writing file: {e}")
+
+
+def get_target_module(number: int) -> str:
+    """Determine the destination module based on the file number."""
+    if number <= 9000:
+        return "traces_1_9k"
+    elif number <= 18000:
+        return "traces_9_18k"
+    elif number <= 27000:
+        return "traces_18_27k"
+    elif number <= 36000:
+        return "traces_27_36k"
+
+
+def generate_drawables(package, number: int):
+    # Determine which module this number belongs to
+    target_part = get_target_module(number)
+
+    # Construct filenames using f-strings
+    xml_filename = f"_{number}.xml"
+    webp_filename = f"fg_{number}.webp"
+
+    # Define source paths
+    # Result: app/src/main/res/drawable-anydpi-v26/_1.xml
+    src_xml = PROJECT_PATH / SOURCE_PART / RESPATH / DRAWABLE / xml_filename
+    src_webp = PROJECT_PATH / SOURCE_PART / RESPATH / WEBP / webp_filename
+
+    # Define destination directories
+    dest_xml_dir = PROJECT_PATH / target_part / RESPATH / DRAWABLE
+    dest_webp_dir = PROJECT_PATH / target_part / RESPATH / WEBP
+
+    # Ensure destination directories exist before attempting to move
+    dest_xml_dir.mkdir(parents=True, exist_ok=True)
+    dest_webp_dir.mkdir(parents=True, exist_ok=True)
+
+    # Define final destination file paths
+    dest_xml = dest_xml_dir / xml_filename
+    dest_webp = dest_webp_dir / webp_filename
+
+    # Generate XML file if it does not exist
+    if not dest_xml.exists():
+        generate_adaptive(number, str(dest_xml))
+    # Generate WebP file if it does not exist
+    if not dest_webp.exists():
+        prepare_graphic(package, str(dest_webp))
 
 
 if __name__ == "__main__":
@@ -70,8 +116,7 @@ if __name__ == "__main__":
         with open(FILE, "r") as file:
             for line in file:
                 package = line.strip()
-                generate_adaptive(sequence)
-                prepare_graphic(package, sequence)
+                generate_drawables(package, sequence)
                 sequence += 1
     except Exception as e:
         print(f"❌ Error during processing: {e}")

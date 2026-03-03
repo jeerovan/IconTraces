@@ -14,8 +14,8 @@ android {
         applicationId = "com.jeerovan.icon.traces"
         minSdk = 26
         targetSdk = 36
-        versionCode = 3
-        versionName = "3.0"
+        versionCode = 4
+        versionName = "4.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -46,6 +46,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":traces_core"))
+    implementation(project(":traces_1_9k"))
+    implementation(project(":traces_9_18k"))
+    implementation(project(":traces_18_27k"))
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.navigation.compose.v270)
     implementation(libs.coil.compose)

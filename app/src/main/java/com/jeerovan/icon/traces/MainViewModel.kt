@@ -17,6 +17,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -50,14 +51,49 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val _versionInfo = MutableStateFlow<String>("")
     val versionInfo = _versionInfo.asStateFlow()
 
+    // Pagination state
+    private var currentOffset = 0
+    private val pageSize = 100
+    private var isLastPage = false
+
     init {
+        // Trigger the first load immediately
+        loadNextPage()
+
+        // Load other metadata in background
         viewModelScope.launch {
-            // 1. Load ALL icons in background
-            allIcons.addAll(IconRepository.getIcons(getApplication()))
-            // 2. Publish only the first 100 to UI immediately so it renders FAST
-            _visibleIcons.value = allIcons.take(100)
             loadSupportedPackages()
             getAppVersion(getApplication())
+        }
+    }
+
+    fun loadNextPage() {
+        // Prevent concurrent loading or loading after all icons are fetched
+        if (_isLoading.value || isLastPage) return
+
+        viewModelScope.launch {
+            _isLoading.value = true
+
+            // Fetch the next chunk from the repository
+            val nextChunk = IconRepository.getIconsPage(
+                context = getApplication(),
+                offset = currentOffset,
+                limit = pageSize
+            )
+
+            if (nextChunk.isEmpty()) {
+                // No more icons to load
+                isLastPage = true
+            } else {
+                // Append the new icons to the existing state safely
+                _visibleIcons.update { currentList ->
+                    currentList + nextChunk
+                }
+                // Move the offset forward for the next scroll
+                currentOffset += pageSize
+            }
+
+            _isLoading.value = false
         }
     }
     fun getAppVersion(context: Context) {
@@ -66,14 +102,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             _versionInfo.value = packageInfo.versionName.toString()
         } catch (_: PackageManager.NameNotFoundException) {
             _versionInfo.value = ""
-        }
-    }
-    // Call this when user scrolls to end
-    fun loadNextPage() {
-        val currentSize = _visibleIcons.value.size
-        val nextChunk = allIcons.drop(currentSize).take(100)
-        if (nextChunk.isNotEmpty()) {
-            _visibleIcons.value += nextChunk
         }
     }
     private fun loadSupportedPackages() {

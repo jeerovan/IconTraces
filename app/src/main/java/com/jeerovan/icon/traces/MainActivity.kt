@@ -94,6 +94,8 @@ import androidx.navigation.compose.composable
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.foundation.lazy.grid.GridItemSpan
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : ComponentActivity() {
@@ -346,7 +348,6 @@ fun HomeScreen(
         }
     }
 }
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun IconsScreen(
@@ -373,6 +374,7 @@ fun IconsScreen(
             }
         )
     }
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -385,11 +387,10 @@ fun IconsScreen(
                         )
                     }
                 },
-                // 2. Action Button for Color Picker
                 actions = {
                     IconButton(onClick = { showColorPicker = true }) {
                         Icon(
-                            imageVector = Icons.Default.Edit, // Or a Palette icon if available
+                            imageVector = Icons.Default.Edit,
                             contentDescription = "Customize Colors"
                         )
                     }
@@ -401,35 +402,63 @@ fun IconsScreen(
             )
         },
     ) { innerPadding ->
-        LazyVerticalGrid(
-            columns = GridCells.Adaptive(minSize = 72.dp),
-            contentPadding = PaddingValues(
-                start = 16.dp,
-                top = innerPadding.calculateTopPadding() + 16.dp,
-                end = 16.dp,
-                bottom = innerPadding.calculateBottomPadding() + 16.dp
-            ),
-            modifier = Modifier.fillMaxSize()
-        ) {
-            items(
-                items = icons,
-                key = { it.resId }
-            ) { icon ->
-                // 3. Pass colors to the item
-                IconGridItem(
-                    icon = icon,
-                    foregroundColor = foregroundColor,
-                    backgroundColor = backgroundColor
-                )
+        // 1. Initial Load State: List is empty AND loading
+        if (icons.isEmpty() && isLoading) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(innerPadding),
+                contentAlignment = Alignment.Center
+            ) {
+                CircularProgressIndicator()
             }
-            item {
-                LaunchedEffect(Unit) {
-                    viewModel.loadNextPage()
+        } else {
+            // 2. Data State / Pagination State
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(minSize = 72.dp),
+                contentPadding = PaddingValues(
+                    start = 16.dp,
+                    top = innerPadding.calculateTopPadding() + 16.dp,
+                    end = 16.dp,
+                    bottom = innerPadding.calculateBottomPadding() + 16.dp
+                ),
+                modifier = Modifier.fillMaxSize()
+            ) {
+                items(
+                    items = icons,
+                    key = { it.resId }
+                ) { icon ->
+                    IconGridItem(
+                        icon = icon,
+                        foregroundColor = foregroundColor,
+                        backgroundColor = backgroundColor
+                    )
+                }
+
+                // 3. Pagination Trigger and Loading Indicator
+                item(span = { GridItemSpan(maxLineSpan) }) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        if (isLoading && icons.isNotEmpty()) {
+                            // Show progress at the bottom when loading next page
+                            CircularProgressIndicator()
+                        } else {
+                            // Trigger next page load when this invisible item is reached
+                            LaunchedEffect(Unit) {
+                                viewModel.loadNextPage()
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
 @Composable
 fun IconGridItem(
     icon: IconItem,
