@@ -1,6 +1,10 @@
 
 ![IconTraces icon](app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp)
 
+<a href="https://play.google.com/store/apps/details?id=com.jeerovan.icon.traces">
+  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60"/>
+</a>
+
 # IconTraces
 
 An open-source Android icon pack built from clean, traced SVG icons, organized by app package ID and generated into an icon-pack-friendly Android resource structure.
@@ -58,3 +62,5 @@ cd IconTraces
 - Modify the existing <package.svg> file in svgs folder
 - Delete the old webp file from the `res/drawable-nodpi/` folder. (Check appfilter.xml if you are unsure which sequence number corresponds to the app)
 - Run the python script and regenerate the webp drawable.
+
+
