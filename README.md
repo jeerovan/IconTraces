@@ -9,6 +9,17 @@
 
 An open-source Android icon pack built from clean, traced SVG icons, organized by app package ID and generated into an icon-pack-friendly Android resource structure.
 
+## Screenshots
+
+<table align="center">
+  <tr>
+    <td><img src="Screenshots/white-home.jpg" alt="White home" width="100%"/></td>
+    <td><img src="Screenshots/white-drawer.jpg" alt="White app drawer" width="100%"/></td>
+    <td><img src="Screenshots/black-home.jpg" alt="Black home" width="100%"/></td>
+    <td><img src="Screenshots/black-drawer.jpg" alt="Black app drawer" width="100%"/></td>
+  </tr>
+</table>
+
 ## Overview
 
 IconTraces ships icon sources as SVGs named using the target Android app package name (example: `com.spotify.music.svg`). The repository includes an automation script that converts these SVGs into WebP drawables used by the Android app, and a mapping file (`appfilter.xml`) used by supported launchers to apply icons.
